@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speedy Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Speedy Bites</h1>
+    <p>Your personal voice-assisted order system!</p>
+  </header>
+
+  <main>
+    <section id="menu-section">
+      <h2>Menu</h2>
+      <div id="menu"></div>
+    </section>
+
+    <section id="order-section">
+      <h2>Your Order</h2>
+      <form id="orderForm">
+        <label for="item">Select Item:</label>
+        <select id="item" required></select>
+
+        <label for="size">Select Size:</label>
+        <select id="size" required>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" required>
+
+        <button type="submit">Add to Order</button>
+      </form>
+      <ul id="orderList"></ul>
+      <p>Total: $<span id="total">0</span></p>
+    </section>
+
+    <section id="delivery-section">
+      <h2>Delivery Details</h2>
+      <input type="text" id="address" placeholder="Delivery Address" required>
+      <select id="payment">
+        <option value="Cash on Delivery">Cash on Delivery</option>
+        <option value="Online Payment">Online Payment</option>
+      </select>
+      <button onclick="finalizeOrder()">Place Order</button>
+    </section>
+  </main>
+
+  <button id="voiceBtn">🎙️ Talk</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

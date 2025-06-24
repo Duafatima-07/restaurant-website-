@@ -1,0 +1,116 @@
+
+:root {
+  --main-color: #e74c3c;
+  --accent-color: #27ae60;
+  --bg-color: #fffaf5;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+header {
+  background: var(--main-color);
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2em;
+}
+
+section {
+  background: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  margin-bottom: 1em;
+  color: var(--main-color);
+  border-bottom: 2px solid #f2dcdc;
+  padding-bottom: 0.5em;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1em;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.6em;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e874b;
+}
+
+#voiceBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #f39c12;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: white;
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+}
+
+ul#orderList {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  margin-top: 1em;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--main-color);
+}
